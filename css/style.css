@@ -133,17 +133,18 @@ img {
     padding: 0 20px;
 }
 
+.nav-item .current {
+    background: #fff;
+    color: #323232 !important;
+    position: relative;
+}
+
 .navbar .navbar-nav .nav-link {
     color: #fff;
     padding: 13px 10px;
 }
 
-.nav-item a.active {
-    background: #fff;
-    position: relative;
-}
-
-.nav-item a.active::after {
+.nav-item a.current::after {
     position: absolute;
     content: "";
     width: 100%;
