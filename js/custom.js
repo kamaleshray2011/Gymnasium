@@ -3,8 +3,8 @@ $(document).ready(function() {
     // active class;
 
     $('.nav-link').click(function() {
-        $('.active').removeClass('active');
-        $(this).addClass('active');
+        $('.current').removeClass('current');
+        $(this).addClass('current');
     });
 
     //animation scroll js
@@ -179,5 +179,12 @@ $(document).ready(function() {
         }
     });
 
+    // Page reload for top;
+
+    $(window).on('load', function() {
+        setTimeout(function() {
+            $(window).scrollTop(0);
+        });
+    });
 
 });
